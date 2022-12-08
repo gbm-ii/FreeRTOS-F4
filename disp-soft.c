@@ -7,7 +7,8 @@ gbm, 2017-2022
 #include "board.h"
 #include "disp.h"
 
-uint32_t display[NDIGITS] = {DigAct(DIG0_MSK), DigAct(DIG1_MSK), DigAct(DIG2_MSK), DigAct(DIG3_MSK)};
+uint32_t display[NDIGITS] = {DigAct(DIG0_MSK) | SegAct(0), DigAct(DIG1_MSK) | SegAct(0),
+	DigAct(DIG2_MSK) | SegAct(0), DigAct(DIG3_MSK) | SegAct(0)};
 uint32_t cpxctrl[NDIGITS];
 
 // Display stuff
